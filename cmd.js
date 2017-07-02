@@ -51,17 +51,23 @@ process.stdin.pipe(sp);
 
 peer.once('signal', function (signal) {
     var ref = Buffer(JSON.stringify(signal)).toString('base64');
-    if (argv.execute) {
-        var ps = exec(argv.execute);
-        ps.stdout.pipe(process.stdout);
-        ps.stderr.pipe(process.stderr);
-        ps.stdin.end(ref);
-    }
-    else {
-        console.log(ref);
-    }
+    console.log(ref)
 });
+
+peer.on('connect', function(){
+  console.log('Connected!')
+  if (argv.execute) {
+      var ps = exec(argv.execute)
+      ps.stdout.pipe(peer)
+      ps.stderr.pipe(peer)
+      peer.pipe(ps.stdin)
+  }
+})
 
 peer.on('error', function(err){
   debug(err)
+})
+
+peer.on('close', function(){
+  console.log('Connection closed!')
 })
