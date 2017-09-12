@@ -20,7 +20,7 @@ var argv = minimist(process.argv.slice(2), {
     }
 });
 if (argv.help || argv._[0] === 'help') {
-    return fs.createReadStream(path.join(__dirname, 'usage.txt'))
+    fs.createReadStream(path.join(__dirname, 'usage.txt'))
         .pipe(process.stdout);
 }
 
