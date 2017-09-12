@@ -1,5 +1,7 @@
-# rtc-shell <span class="badge-patreon"><a href="https://patreon.com/roccomuso" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
-WebRTC-based Shell.
+# rtc-shell <span class="badge-patreon"><a href="https://patreon.com/roccomuso" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span> [![NPM Version](https://img.shields.io/npm/v/rtc-shell.svg)](https://www.npmjs.com/package/rtc-shell)
+[![Dependency Status](https://david-dm.org/roccomuso/rtc-shell.png)](https://david-dm.org/roccomuso/rtc-shell)
+
+> WebRTC-based Shell.
 
 Works well with the [rtc-web-term](https://github.com/roccomuso/rtc-web-term).
 
