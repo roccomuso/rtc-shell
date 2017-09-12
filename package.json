@@ -1,11 +1,21 @@
 {
   "name": "rtc-shell",
   "version": "1.0.0",
-  "description": "",
+  "description": "webRTC based shell",
   "main": "cmd.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roccomuso/rtc-shell.git"
+  },
+  "keywords": [
+    "webrtc",
+    "rtc",
+    "shell",
+    "tool"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
